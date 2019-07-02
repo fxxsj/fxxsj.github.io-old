@@ -255,7 +255,7 @@
 <p>修改用户主目录下名为.bash_profile的文件，配置PATH环境变量并使其生效。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~</span><br><span class="line">vim .bash_profile</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> ... 此处省略上面的代码 ...</span><br><span class="line"></span><br><span class="line">export PATH=$PATH:/usr/local/python37/bin</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span> ... 此处省略下面的代码 ...</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> ... 此处省略上面的代码 ...</span></span><br><span class="line"></span><br><span class="line">export PATH=$PATH:/usr/local/python37/bin</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> ... 此处省略下面的代码 ...</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source .bash_profile</span><br></pre></td></tr></table></figure>
 
