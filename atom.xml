@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://fxxsj.github.io/"/>
-  <updated>2019-07-28T03:50:07.695Z</updated>
+  <updated>2019-07-30T10:55:10.844Z</updated>
   <id>http://fxxsj.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://fxxsj.github.io/2019/07/28/%E4%B8%80%E9%94%AE%E5%90%AF%E7%94%A8SSH%E5%AF%86%E9%92%A5%E5%AE%89%E5%85%A8%E7%99%BB%E5%BD%95/"/>
     <id>http://fxxsj.github.io/2019/07/28/一键启用SSH密钥安全登录/</id>
     <published>2019-07-28T03:40:36.000Z</published>
-    <updated>2019-07-28T03:50:07.695Z</updated>
+    <updated>2019-07-30T10:55:10.844Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>使用VPS时，经常会遇到SSH爆破，一旦我们使用弱密码，无形中产生很多安全隐患。为了用户以及个人的信息安全，我推荐大家启用密钥登陆，同时关闭密码登陆。</p><p>其实强密码也可以达到密钥登陆的安全性，不过强密码带来的不便远远大于密钥方式，同时通过一键脚本开启密钥登陆比修改密码更快捷。</p><h3 id="脚本来源"><a href="#脚本来源" class="headerlink" title="脚本来源"></a>脚本来源</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/KiritoMiao/SSHKEY_Installer</span><br></pre></td></tr></table></figure><h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><h4 id="首先我们需要生成一对密钥，通过Xshell生成是最简便的方式。"><a href="#首先我们需要生成一对密钥，通过Xshell生成是最简便的方式。" class="headerlink" title="首先我们需要生成一对密钥，通过Xshell生成是最简便的方式。"></a>首先我们需要生成一对密钥，通过Xshell生成是最简便的方式。</h4><p>点击工具→用户密钥管理者→生成。<br><img src="/img/jiaocheng/shell.png" alt><br>私钥我们需要妥善保存，不能传播出去，将公钥复制，导入Github中：<a href="https://github.com/settings/keys" target="_blank" rel="noopener">https://github.com/settings/keys</a></p><h4 id="接下来我们运行脚本即可。"><a href="#接下来我们运行脚本即可。" class="headerlink" title="接下来我们运行脚本即可。"></a>接下来我们运行脚本即可。</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/garhing/SSHKEY_Installer/raw/master/key.sh --no-check-certificate&amp;&amp; bash key.sh [你的Github用户名]</span><br></pre></td></tr></table></figure><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>开启方法非常简单，平时登陆也免除了输入密码的烦恼。</p><h3 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h3><blockquote><p>本文转载自博客<a href="https://www.94ish.me/1966.html" target="_blank" rel="noopener">就是爱生活</a>。</p><p>感谢原作者，以及开源世界。</p></blockquote>]]></content>
     
