@@ -5156,6 +5156,10 @@ table table {
   content: "\e64b";
 }
 
+.icon-telegarm:before {
+  content: "\e74c";
+}
+
 .icon-segmentfault:before {
   content: "\e610";
 }
